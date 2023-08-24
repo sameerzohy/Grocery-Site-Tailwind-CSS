@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Website</title>
+    <link rel="stylesheet" href="output.css">
+    <script src="https://kit.fontawesome.com/0f825555fb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="menu-button absolute top-10 left-5 sm:hidden">
+    
+        <i class="fa-solid fa-bars text-2xl font-bold openbtn" onclick="openNav()" style="color: #ffffff;"></i>
+      
+    </div>
+    <div class="sidebar bg-slate-400 pt-15" id="mySidebar">
+        <a href="javascript:void(0)" class="closebtn text-xl font-bold" onclick="closeNav()">X</a>
+        <a href="#">Home</a>
+        <a href="#">Search</a>
+        <a href="#">Products</a>
+        <a href="#">About Us</a>
+        <a href="#">Services</a>
+        <a href="#">Contact Us</a>
+        <a href="#">cart</a>
+        <a href="#">Login</a>
+    </div>
+    <header class="py-6 primary-bg-color"">
+        <div class="w-full sm:w-4/5 mx-auto flex justify-center sm:justify-between items-center">
+            <div class="icons hidden sm:block">
+                <i class="fa-solid fa-magnifying-glass text-xl px-3" style="color:white;"></i>
+                <i class="fa-solid fa-user text-xl px-3" style="color: #ffffff;"></i>
+            </div>
+            <div class="header-title">
+                <h1 class="text-white text-3xl font-bold uppercase ">Grocery Site</h1>
+                <p class="text-sm text-white text-center">India's No:1 Grocery Site!</p>
+            </div>
+            <div class="hidden sm:block">
+                <i class="fa-solid fa-cart-shopping text-xl" style="color: #ffffff;"></i>
+            </div>
+        </div>
+    </header>
+    <nav class="bg-blue-700 py-4 text-white hidden sm:block">
+        <ul class="uppercase flex justify-center nav-list font-medium">
+            <li><a href="#">Home</a></li>
+            <li class="hover:underline active:underline"><a href="#">Products <p class="rot inline">></p></a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">contact us</a></li>
+        </ul>
+    </nav>
+    <section class="showcase flex items-center -z-10">
+        <div class="wrapper grid grid-cols-1 md:grid-cols-2 items-center py-12 sm:py-0">
+            <div class="showcase-content text-white">
+                <p class="font-bold">24 x 7 supported by India's Best delievery.</p>
+                <h1 class="capitalize text-6xl my-6 text-white font-bold">Stay Home & We Will deliever your needs</h1>
+                <a href="#"><input type="button" value="Buy Now" class="text-lg font-medium py-2 px-8 text-white bg-red-500 border-none rounded-xl"></a>
+            </div>
+            <div class="justify-self-end content-img hidden md:block">
+                <img src="/images/fruits-removebg-preview.png" alt="" height="300px" class="hidden md:block">
+            </div> 
+        </div> 
+    </section>
+    <main class="primary-bg-color text-white justify-items-center py-20">
+        <section class="products wrapper grid grid-cols-1 gap-20 sm:grid-cols-2 md:grid-cols-4">
+            <div class="card text-center font-medium text-lg">
+                <img src="/images/brocoli-removebg-preview.png" alt="" class="dark:bg-slate-900">
+                <h3>Brocoli 1 Piece</h3>
+                <h4>Price:$10</h4>
+                <a href="#">
+                    <input type="button" value="Add to cart" class=" px-8 py-4 outline-none border-white border-solid border-2">
+                </a>
+            </div>
+            <div class="card text-center font-medium text-lg">
+                <img src="/images/carrot-removebg-preview.png" alt="" class="dark:bg-slate-900">
+                <h3>Carrot 1kg</h3>
+                <h4>Price:$15</h4>
+                <a href="#">
+                    <input type="button" value="Add to cart" class=" px-8 py-4 outline-none border-white border-solid border-2">
+                </a>
+            </div>
+            <div class="card text-center font-medium text-lg">
+                <img src="/images/radish.png" alt="" class="dark:bg-slate-900">
+                <h3>Radish 1kg</h3>
+                <h4>Price:$18</h4>
+                <a href="#">
+                    <input type="button" value="Add to cart" class=" px-8 py-4 outline-none border-white border-solid border-2">
+                </a>
+            </div>
+            <div class="card text-center font-medium text-lg">
+                <img src="/images/pormegranate-removebg-preview.png" alt="" class="dark:bg-slate-900">
+                <h3>Pomegranate 1kg</h3>
+                <h4>Price:$12</h4>
+                <a href="#">
+                    <input type="button" value="Add to cart" class=" px-8 py-4 outline-none border-white border-solid border-2">
+                </a>
+            </div>
+            <div class="card text-center font-medium text-lg">
+                <img src="/images/apple-removebg-preview.png" alt="" class="dark:bg-slate-900">
+                <h3>apple 1kg</h3>
+                <h4>Price:$14</h4>
+                <a href="#">
+                    <input type="button" value="Add to cart" class=" px-8 py-4 outline-none border-white border-solid border-2">
+                </a>
+            </div>
+            <div class="card text-center font-medium text-lg">
+                <img src="/images/tomato-removebg-preview.png" alt="" class="dark:bg-slate-900">
+                <h3>Tomato 1kg</h3>
+                <h4>Price:$20</h4>
+                <a href="#">
+                    <input type="button" value="Add to cart" class=" px-8 py-4 outline-none border-white border-solid border-2">
+                </a>
+            </div>
+            <div class="card text-center font-medium text-lg">
+                <img src="/images/potato-removebg-preview.png" alt="" class="dark:bg-slate-900">
+                <h3>Potato 1kg</h3>
+                <h4>Price:$8</h4>
+                <a href="#">
+                    <input type="button" value="Add to cart" class=" px-8 py-4 outline-none border-white border-solid border-2">
+                </a>
+            </div>
+            <div class="card text-center font-medium text-lg">
+                <img src="/images/radish.png" alt="" class="dark:bg-slate-900">
+                <h3>Radish 1kg</h3>
+                <h4>Price:$18</h4>
+                <a href="#">
+                    <input type="button" value="Add to cart" class=" px-8 py-4 outline-none border-white border-solid border-2">
+                </a>
+            </div>
+            <div class="card text-center font-medium text-lg">
+                <img src="/images/banana-removebg-preview.png" alt="" class="dark:bg-slate-900">
+                <h3>Banana 1kg</h3>
+                <h4>Price:$16</h4>
+                <a href="#">
+                    <input type="button" value="Add to cart" class=" px-8 py-4 outline-none border-white border-solid border-2">
+                </a>
+            </div>
+            <div class="card text-center font-medium text-lg">
+                <img src="/images/chicken-removebg-preview.png" alt="" class="dark:bg-slate-900">
+                <h3>Chicken 1kg</h3>
+                <h4>Price:$30</h4>
+                <a href="#">
+                    <input type="button" value="Add to cart" class=" px-8 py-4 outline-none border-white border-solid border-2">
+                </a>
+            </div>
+            <div class="card text-center font-medium text-lg">
+                <img src="/images/onion-removebg-preview.png" alt="" class="dark:bg-slate-900">
+                <h3>Onion 1kg</h3>
+                <h4>Price:$10</h4>
+                <a href="#">
+                    <input type="button" value="Add to cart" class=" px-8 py-4 outline-none border-white border-solid border-2">
+                </a>
+            </div>
+            <div class="card text-center font-medium text-lg">
+                <img src="/images/orange-removebg-preview.png" alt="" class="dark:bg-slate-900">
+                <h3>Orange 1kg</h3>
+                <h4>Price:$15</h4>
+                <a href="#">
+                    <input type="button" value="Add to cart" class=" px-8 py-4 outline-none border-white border-solid border-2">
+                </a>
+            </div>
+            <div class="card text-center font-medium text-lg">
+                <img src="/images/spinach-removebg-preview.png" alt="" class="dark:bg-slate-900">
+                <h3>spinach</h3>
+                <h4>Price:$5</h4>
+                <a href="#">
+                    <input type="button" value="Add to cart" class=" px-8 py-4 outline-none border-white border-solid border-2">
+                </a>
+            </div><div class="card text-center font-medium text-lg">
+                <img src="/images/brocoli-removebg-preview.png" alt="" class="dark:bg-slate-900">
+                <h3>Brocoli</h3>
+                <h4>Price:$12</h4>
+                <a href="#">
+                    <input type="button" value="Add to cart" class=" px-8 py-4 outline-none border-white border-solid border-2">
+                </a>
+            </div>
+            <div class="card text-center font-medium text-lg">
+                <img src="/images/ladiesfinger-removebg-preview.png" alt="" class="dark:bg-slate-900">
+                <h3>Ladies Finger</h3>
+                <h4>Price:$5</h4>
+                <a href="#">
+                    <input type="button" value="Add to cart" class=" px-8 py-4 outline-none border-white border-solid border-2">
+                </a>
+            </div>
+            <div class="card text-center font-medium text-lg">
+                <img src="/images/dates-removebg-preview.png" alt="" class="dark:bg-slate-900">
+                <h3>Dates</h3>
+                <h4>Price:$25</h4>
+                <a href="#">
+                    <input type="button" value="Add to cart" class=" px-8 py-4 outline-none border-white border-solid border-2">
+                </a>
+            </div>
+
+        </section>
+    </main>
+    
+
+    <section class="subscribe w-full bg-slate-400 p-5 ">
+        <div class="flex flex-col justify-center gap-4 wrapper sm:flex-row">
+            <h2 class="text-white text-xl mt-1">Subscribe To Our Email</h2>
+            <input type="email" name="" id="" class="px-10 py-2 outline-none border-1 border-solid border-slate-200 rounded-lg" placeholder="grocerybasket@gamil.com">
+        </div>
+    </section>
+
+
+
+    <script>
+        function openNav() {
+          document.getElementById("mySidebar").style.width = "300px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidebar").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }
+        </script>
+
+
+</body>
+</html>
